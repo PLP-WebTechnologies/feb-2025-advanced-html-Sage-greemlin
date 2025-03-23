@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form website</h1>
+
+    <br>
+    <section id="intructions">
+        <!--Added an ordered list with roman numerals for steps how to complete form-->
+        <ol type="I">
+            <li>Fill in the form</li>
+            <li>Insure all field are filled</li>
+            <li>Add "@.gmail.com" if neccesary</li>
+            <li>Submit the form</li>
+            <li>Wait for a response</li>
+        </ol>
+
+    </section>
+        
+
+    <br><br>
+    <section id="imageofform">
+        <!--Add an external image from pexels.com with a character filling a form-->
+        <img src="https://images.pexels.com/photos/261679/pexels-photo-261679.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Form image" style="height: 500px; width: 500px;">
+    </section>
+
+    <br><br>
+    <section>
+        <!--Add a table of 5 contacts with; name, address, mobile and emails-->
+        <table style="border: 1px solid black; width: 60%; border-collapse: collapse;">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>David Doe</td>
+                <td>1234 Main St</td>
+                <td>123-456-7890</td>
+                <td>johnFacts@gmail.com</td>
+                <td>
+            </tr>
+            <tr>
+                <td>Jane Doe</td>
+                <td>1234 Main St</td>
+                <td>123-456-7890</td>
+                <td>jane123@outlook.co.za</td>
+                <td>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>1234 Main St</td>
+                <td>123-456-7890</td>
+                <td>Mrsmith@gamil.com</td>
+                <td>
+            </tr>
+            <tr>
+                <td>Jane Oliver</td>
+                <td>1234 Main St</td>
+                <td>123-456-7890</td>
+                <td>Goodwill@gmai.com</td>
+                <td>
+            </tr>
+            <tr>
+                <td>Hector joe</td>
+                <td>1234 Main St</td>
+                <td>123-456-7890</td>
+                <td>Hec777@outlook.co.za</td>
+                <td>
+            </tr>
+        </table>
+    </section>
+
+    <br><br>
+
+    <section id="form" style="border: 1px solid black; width: 60%; padding: 10px;">
+        <!--Add a form with the following fields; name, address, mobile, email, password, confirm password, submit button-->
+        <!--includes a dropdown, radio buttons, and checkboxes.-->
+        <h2>Registaration Form</h2>
+        <form action="Registration.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <br><br>
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" required>
+            <br><br>
+            <label for="mobile">Mobile:</label>
+            <input type="text" name="mobile" id="mobile" required>
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="confirm_password" required>
+            <br><br>
+            <label for="Gender">Gender: </label>
+            <input type="radio" name="Gender" id="Gender" value="Male">MALE
+            <input type="radio" name="Gender" id="Gender" value="Female">FEMALE
+            <br><br>
+            <label for="Country">Country: </label>
+            <select name="Country" id="Country">
+                <option>--Select Country--</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Niggeria">Niggeria</option>
+            </select>
+            <br><br>
+            <label for="Hobbies">Hobbies: </label>
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="Reading">Reading
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="Swimming">Swimming
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="Travelling">Travelling
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="Watching">Watching
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </section>
+</body>
+</html>
